@@ -1,0 +1,1122 @@
+Sat 26 Aug 2023 20:04:25 INFO  
+[1;35mGeneral Hyper Parameters:
+[0m[1;36mgpu_id[0m =[1;33m 0[0m
+[1;36muse_gpu[0m =[1;33m True[0m
+[1;36mseed[0m =[1;33m 2020[0m
+[1;36mstate[0m =[1;33m INFO[0m
+[1;36mreproducibility[0m =[1;33m True[0m
+[1;36mdata_path[0m =[1;33m D:\Anaconda\envs\py36tf14\lib\site-packages\recbole\config\../dataset_example/ml-100k[0m
+[1;36mshow_progress[0m =[1;33m True[0m
+
+[1;35mTraining Hyper Parameters:
+[0m[1;36mcheckpoint_dir[0m =[1;33m saved[0m
+[1;36mepochs[0m =[1;33m 500[0m
+[1;36mtrain_batch_size[0m =[1;33m 4096[0m
+[1;36mlearner[0m =[1;33m adam[0m
+[1;36mlearning_rate[0m =[1;33m 0.001[0m
+[1;36mtraining_neg_sample_num[0m =[1;33m 0[0m
+[1;36mtraining_neg_sample_distribution[0m =[1;33m uniform[0m
+[1;36meval_step[0m =[1;33m 1[0m
+[1;36mstopping_step[0m =[1;33m 10[0m
+[1;36mclip_grad_norm[0m =[1;33m None[0m
+[1;36mweight_decay[0m =[1;33m 0.0[0m
+[1;36mdraw_loss_pic[0m =[1;33m False[0m
+[1;36mloss_decimal_place[0m =[1;33m 4[0m
+
+[1;35mEvaluation Hyper Parameters:
+[0m[1;36meval_setting[0m =[1;33m RO_RS[0m
+[1;36mgroup_by_user[0m =[1;33m False[0m
+[1;36msplit_ratio[0m =[1;33m [0.8, 0.1, 0.1][0m
+[1;36mleave_one_num[0m =[1;33m 2[0m
+[1;36mreal_time_process[0m =[1;33m False[0m
+[1;36mmetrics[0m =[1;33m ['AUC', 'LogLoss'][0m
+[1;36mtopk[0m =[1;33m [10][0m
+[1;36mvalid_metric[0m =[1;33m AUC[0m
+[1;36meval_batch_size[0m =[1;33m 4096[0m
+[1;36mmetric_decimal_place[0m =[1;33m 4[0m
+
+[1;35mDataset Hyper Parameters:
+[0m[1;36mfield_separator[0m =[1;33m 	[0m
+[1;36mseq_separator[0m =[1;33m  [0m
+[1;36mUSER_ID_FIELD[0m =[1;33m user_id[0m
+[1;36mITEM_ID_FIELD[0m =[1;33m item_id[0m
+[1;36mRATING_FIELD[0m =[1;33m rating[0m
+[1;36mTIME_FIELD[0m =[1;33m timestamp[0m
+[1;36mseq_len[0m =[1;33m None[0m
+[1;36mLABEL_FIELD[0m =[1;33m label[0m
+[1;36mthreshold[0m =[1;33m {'rating': 4}[0m
+[1;36mNEG_PREFIX[0m =[1;33m neg_[0m
+[1;36mload_col[0m =[1;33m {'inter': ['user_id', 'item_id', 'rating', 'timestamp'], 'user': ['user_id', 'age', 'gender', 'occupation'], 'item': ['item_id', 'release_year', 'class']}[0m
+[1;36munload_col[0m =[1;33m None[0m
+[1;36munused_col[0m =[1;33m None[0m
+[1;36madditional_feat_suffix[0m =[1;33m None[0m
+[1;36mrm_dup_inter[0m =[1;33m None[0m
+[1;36mlowest_val[0m =[1;33m None[0m
+[1;36mhighest_val[0m =[1;33m None[0m
+[1;36mequal_val[0m =[1;33m None[0m
+[1;36mnot_equal_val[0m =[1;33m None[0m
+[1;36mfilter_inter_by_user_or_item[0m =[1;33m True[0m
+[1;36mmax_user_inter_num[0m =[1;33m None[0m
+[1;36mmin_user_inter_num[0m =[1;33m None[0m
+[1;36mmax_item_inter_num[0m =[1;33m None[0m
+[1;36mmin_item_inter_num[0m =[1;33m None[0m
+[1;36mfields_in_same_space[0m =[1;33m None[0m
+[1;36mpreload_weight[0m =[1;33m None[0m
+[1;36mnormalize_field[0m =[1;33m None[0m
+[1;36mnormalize_all[0m =[1;33m True[0m
+[1;36mITEM_LIST_LENGTH_FIELD[0m =[1;33m item_length[0m
+[1;36mLIST_SUFFIX[0m =[1;33m _list[0m
+[1;36mMAX_ITEM_LIST_LENGTH[0m =[1;33m 50[0m
+[1;36mPOSITION_FIELD[0m =[1;33m position_id[0m
+[1;36mHEAD_ENTITY_ID_FIELD[0m =[1;33m head_id[0m
+[1;36mTAIL_ENTITY_ID_FIELD[0m =[1;33m tail_id[0m
+[1;36mRELATION_ID_FIELD[0m =[1;33m relation_id[0m
+[1;36mENTITY_ID_FIELD[0m =[1;33m entity_id[0m
+
+[1;35mOther Hyper Parameters: 
+[0m[1;36membedding_size[0m = [1;33m10[0m
+[1;36mSOURCE_ID_FIELD[0m = [1;33msource_id[0m
+[1;36mTARGET_ID_FIELD[0m = [1;33mtarget_id[0m
+[1;36mbenchmark_filename[0m = [1;33mNone[0m
+[1;36mMODEL_TYPE[0m = [1;33mModelType.CONTEXT[0m
+[1;36meval_args[0m = [1;33m{'split': {'RS': [0.8, 0.1, 0.1]}, 'order': 'RO', 'group_by': None, 'mode': 'labeled'}[0m
+[1;36mtrain_neg_sample_args[0m = [1;33m{'strategy': 'none'}[0m
+[1;36mMODEL_INPUT_TYPE[0m = [1;33mInputType.POINTWISE[0m
+[1;36meval_type[0m = [1;33mEvaluatorType.INDIVIDUAL[0m
+[1;36mvalid_metric_bigger[0m = [1;33mTrue[0m
+[1;36mdevice[0m = [1;33mcpu[0m
+
+
+Sat 26 Aug 2023 20:04:25 INFO  [1;35mml-100k[0m
+[1;34mThe number of users[0m: 944
+[1;34mAverage actions of users[0m: 106.04453870625663
+[1;34mThe number of items[0m: 1683
+[1;34mAverage actions of items[0m: 59.45303210463734
+[1;34mThe number of inters[0m: 100000
+[1;34mThe sparsity of the dataset[0m: 93.70575143257098%
+[1;34mRemain Fields[0m: ['user_id', 'item_id', 'timestamp', 'age', 'gender', 'occupation', 'release_year', 'class', 'label']
+Sat 26 Aug 2023 20:04:26 INFO  [1;35mBuild[0m[1;33m [ContextDataLoader][0m for [1;33m[train][0m with format [1;33m[InputType.POINTWISE][0m
+Sat 26 Aug 2023 20:04:26 INFO  [1;35m[train][0m[1;33m No Negative Sampling[0m
+Sat 26 Aug 2023 20:04:26 INFO  [1;35m[train][0m[1;36m batch_size[0m = [1;33m[4096][0m, [1;36mshuffle[0m = [1;33m[True]
+[0m
+Sat 26 Aug 2023 20:04:26 INFO  [1;35mBuild[0m[1;33m [ContextDataLoader][0m for [1;33m[evaluation][0m with format [1;33m[InputType.POINTWISE][0m
+Sat 26 Aug 2023 20:04:26 INFO  [1;35mEvaluation Setting:[0m
+	[1;33mNo Grouping[0m
+	[1;34mOrdering[0m: {'strategy': 'shuffle'}
+	[1;34mSplitting[0m: {'strategy': 'by_ratio', 'ratios': [0.8, 0.1, 0.1]}
+	[1;33mNo Negative Sampling[0m
+Sat 26 Aug 2023 20:04:26 INFO  [1;35m[evaluation][0m[1;36m batch_size[0m = [1;33m[4096][0m, [1;36mshuffle[0m = [1;33m[False]
+[0m
+Sat 26 Aug 2023 20:04:26 INFO  LR(
+  (token_embedding_table): FMEmbedding(
+    (embedding): Embedding(2788, 10)
+  )
+  (float_embedding_table): Embedding(1, 10)
+  (token_seq_embedding_table): ModuleList(
+    (0): Embedding(20, 10)
+  )
+  (first_order_linear): FMFirstOrderLinear(
+    (token_embedding_table): FMEmbedding(
+      (embedding): Embedding(2788, 1)
+    )
+    (float_embedding_table): Embedding(1, 1)
+    (token_seq_embedding_table): ModuleList(
+      (0): Embedding(20, 1)
+    )
+  )
+  (sigmoid): Sigmoid()
+  (loss): BCELoss()
+)[1;34m
+Trainable parameters[0m: 30900
+Sat 26 Aug 2023 20:04:26 INFO  [1;32mepoch 0 training[0m [[1;34mtime[0m: 0.25s, [1;34mtrain loss[0m: 17.6109]
+Sat 26 Aug 2023 20:04:26 INFO  [1;32mepoch 0 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.519900]
+Sat 26 Aug 2023 20:04:26 INFO  [1;34mvalid result[0m: 
+auc : 0.5199    logloss : 0.8481    
+Sat 26 Aug 2023 20:04:26 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:26 INFO  [1;32mepoch 1 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 16.8744]
+Sat 26 Aug 2023 20:04:26 INFO  [1;32mepoch 1 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.523800]
+Sat 26 Aug 2023 20:04:26 INFO  [1;34mvalid result[0m: 
+auc : 0.5238    logloss : 0.8174    
+Sat 26 Aug 2023 20:04:26 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:26 INFO  [1;32mepoch 2 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 16.2997]
+Sat 26 Aug 2023 20:04:26 INFO  [1;32mepoch 2 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.528500]
+Sat 26 Aug 2023 20:04:26 INFO  [1;34mvalid result[0m: 
+auc : 0.5285    logloss : 0.7929    
+Sat 26 Aug 2023 20:04:26 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 3 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 15.8393]
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 3 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.534000]
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mvalid result[0m: 
+auc : 0.534    logloss : 0.7732    
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 4 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 15.4549]
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 4 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.540100]
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mvalid result[0m: 
+auc : 0.5401    logloss : 0.7571    
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 5 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 15.1426]
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 5 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.546700]
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mvalid result[0m: 
+auc : 0.5467    logloss : 0.7439    
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 6 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 14.8789]
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 6 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.553600]
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mvalid result[0m: 
+auc : 0.5536    logloss : 0.7328    
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 7 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 14.6528]
+Sat 26 Aug 2023 20:04:27 INFO  [1;32mepoch 7 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.560900]
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mvalid result[0m: 
+auc : 0.5609    logloss : 0.7232    
+Sat 26 Aug 2023 20:04:27 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 8 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 14.4654]
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 8 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.568400]
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mvalid result[0m: 
+auc : 0.5684    logloss : 0.7148    
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 9 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 14.2906]
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 9 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.576000]
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mvalid result[0m: 
+auc : 0.576    logloss : 0.7072    
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 10 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 14.1363]
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 10 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.583700]
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mvalid result[0m: 
+auc : 0.5837    logloss : 0.7002    
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 11 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 13.9931]
+Sat 26 Aug 2023 20:04:28 INFO  [1;32mepoch 11 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.591300]
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mvalid result[0m: 
+auc : 0.5913    logloss : 0.6939    
+Sat 26 Aug 2023 20:04:28 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 12 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 13.8573]
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 12 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.598800]
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mvalid result[0m: 
+auc : 0.5988    logloss : 0.6879    
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 13 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 13.7307]
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 13 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.606200]
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mvalid result[0m: 
+auc : 0.6062    logloss : 0.6824    
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 14 training[0m [[1;34mtime[0m: 0.27s, [1;34mtrain loss[0m: 13.6169]
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 14 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.613400]
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mvalid result[0m: 
+auc : 0.6134    logloss : 0.6772    
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 15 training[0m [[1;34mtime[0m: 0.29s, [1;34mtrain loss[0m: 13.5165]
+Sat 26 Aug 2023 20:04:29 INFO  [1;32mepoch 15 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.620500]
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mvalid result[0m: 
+auc : 0.6205    logloss : 0.6723    
+Sat 26 Aug 2023 20:04:29 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:30 INFO  [1;32mepoch 16 training[0m [[1;34mtime[0m: 0.35s, [1;34mtrain loss[0m: 13.4064]
+Sat 26 Aug 2023 20:04:30 INFO  [1;32mepoch 16 evaluating[0m [[1;34mtime[0m: 0.03s, [1;34mvalid_score[0m: 0.627300]
+Sat 26 Aug 2023 20:04:30 INFO  [1;34mvalid result[0m: 
+auc : 0.6273    logloss : 0.6677    
+Sat 26 Aug 2023 20:04:30 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:30 INFO  [1;32mepoch 17 training[0m [[1;34mtime[0m: 0.32s, [1;34mtrain loss[0m: 13.3116]
+Sat 26 Aug 2023 20:04:30 INFO  [1;32mepoch 17 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.633900]
+Sat 26 Aug 2023 20:04:30 INFO  [1;34mvalid result[0m: 
+auc : 0.6339    logloss : 0.6634    
+Sat 26 Aug 2023 20:04:30 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:30 INFO  [1;32mepoch 18 training[0m [[1;34mtime[0m: 0.29s, [1;34mtrain loss[0m: 13.2217]
+Sat 26 Aug 2023 20:04:30 INFO  [1;32mepoch 18 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.640300]
+Sat 26 Aug 2023 20:04:30 INFO  [1;34mvalid result[0m: 
+auc : 0.6403    logloss : 0.6593    
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:31 INFO  [1;32mepoch 19 training[0m [[1;34mtime[0m: 0.32s, [1;34mtrain loss[0m: 13.1434]
+Sat 26 Aug 2023 20:04:31 INFO  [1;32mepoch 19 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.646400]
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mvalid result[0m: 
+auc : 0.6464    logloss : 0.6555    
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:31 INFO  [1;32mepoch 20 training[0m [[1;34mtime[0m: 0.33s, [1;34mtrain loss[0m: 13.0529]
+Sat 26 Aug 2023 20:04:31 INFO  [1;32mepoch 20 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.652300]
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mvalid result[0m: 
+auc : 0.6523    logloss : 0.6519    
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:31 INFO  [1;32mepoch 21 training[0m [[1;34mtime[0m: 0.26s, [1;34mtrain loss[0m: 12.9786]
+Sat 26 Aug 2023 20:04:31 INFO  [1;32mepoch 21 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.658100]
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mvalid result[0m: 
+auc : 0.6581    logloss : 0.6484    
+Sat 26 Aug 2023 20:04:31 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:32 INFO  [1;32mepoch 22 training[0m [[1;34mtime[0m: 0.30s, [1;34mtrain loss[0m: 12.9043]
+Sat 26 Aug 2023 20:04:32 INFO  [1;32mepoch 22 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.663500]
+Sat 26 Aug 2023 20:04:32 INFO  [1;34mvalid result[0m: 
+auc : 0.6635    logloss : 0.6451    
+Sat 26 Aug 2023 20:04:32 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:32 INFO  [1;32mepoch 23 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 12.8386]
+Sat 26 Aug 2023 20:04:32 INFO  [1;32mepoch 23 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.668600]
+Sat 26 Aug 2023 20:04:32 INFO  [1;34mvalid result[0m: 
+auc : 0.6686    logloss : 0.6421    
+Sat 26 Aug 2023 20:04:32 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:32 INFO  [1;32mepoch 24 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 12.7699]
+Sat 26 Aug 2023 20:04:32 INFO  [1;32mepoch 24 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.673700]
+Sat 26 Aug 2023 20:04:32 INFO  [1;34mvalid result[0m: 
+auc : 0.6737    logloss : 0.6391    
+Sat 26 Aug 2023 20:04:32 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 25 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 12.7116]
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 25 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.678400]
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mvalid result[0m: 
+auc : 0.6784    logloss : 0.6363    
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 26 training[0m [[1;34mtime[0m: 0.25s, [1;34mtrain loss[0m: 12.6441]
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 26 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.683000]
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mvalid result[0m: 
+auc : 0.683    logloss : 0.6336    
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 27 training[0m [[1;34mtime[0m: 0.25s, [1;34mtrain loss[0m: 12.5940]
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 27 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.687200]
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mvalid result[0m: 
+auc : 0.6872    logloss : 0.6311    
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 28 training[0m [[1;34mtime[0m: 0.30s, [1;34mtrain loss[0m: 12.5349]
+Sat 26 Aug 2023 20:04:33 INFO  [1;32mepoch 28 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.691300]
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mvalid result[0m: 
+auc : 0.6913    logloss : 0.6287    
+Sat 26 Aug 2023 20:04:33 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 29 training[0m [[1;34mtime[0m: 0.25s, [1;34mtrain loss[0m: 12.4764]
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 29 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.695200]
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mvalid result[0m: 
+auc : 0.6952    logloss : 0.6264    
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 30 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 12.4325]
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 30 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.698900]
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mvalid result[0m: 
+auc : 0.6989    logloss : 0.6242    
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 31 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 12.3905]
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 31 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.702300]
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mvalid result[0m: 
+auc : 0.7023    logloss : 0.6221    
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 32 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 12.3378]
+Sat 26 Aug 2023 20:04:34 INFO  [1;32mepoch 32 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.705600]
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mvalid result[0m: 
+auc : 0.7056    logloss : 0.6201    
+Sat 26 Aug 2023 20:04:34 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 33 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 12.2985]
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 33 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.708700]
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mvalid result[0m: 
+auc : 0.7087    logloss : 0.6182    
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 34 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 12.2536]
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 34 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.711600]
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mvalid result[0m: 
+auc : 0.7116    logloss : 0.6163    
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 35 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 12.2120]
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 35 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.714400]
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mvalid result[0m: 
+auc : 0.7144    logloss : 0.6146    
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 36 training[0m [[1;34mtime[0m: 0.19s, [1;34mtrain loss[0m: 12.1692]
+Sat 26 Aug 2023 20:04:35 INFO  [1;32mepoch 36 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.717000]
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mvalid result[0m: 
+auc : 0.717    logloss : 0.6129    
+Sat 26 Aug 2023 20:04:35 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 37 training[0m [[1;34mtime[0m: 0.30s, [1;34mtrain loss[0m: 12.1297]
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 37 evaluating[0m [[1;34mtime[0m: 0.03s, [1;34mvalid_score[0m: 0.719600]
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mvalid result[0m: 
+auc : 0.7196    logloss : 0.6112    
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 38 training[0m [[1;34mtime[0m: 0.35s, [1;34mtrain loss[0m: 12.0961]
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 38 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.721900]
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mvalid result[0m: 
+auc : 0.7219    logloss : 0.6097    
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 39 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 12.0627]
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 39 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.724100]
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mvalid result[0m: 
+auc : 0.7241    logloss : 0.6082    
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 40 training[0m [[1;34mtime[0m: 0.19s, [1;34mtrain loss[0m: 12.0303]
+Sat 26 Aug 2023 20:04:36 INFO  [1;32mepoch 40 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.726200]
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mvalid result[0m: 
+auc : 0.7262    logloss : 0.6067    
+Sat 26 Aug 2023 20:04:36 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 41 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.9946]
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 41 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.728200]
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mvalid result[0m: 
+auc : 0.7282    logloss : 0.6054    
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 42 training[0m [[1;34mtime[0m: 0.27s, [1;34mtrain loss[0m: 11.9698]
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 42 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.730200]
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mvalid result[0m: 
+auc : 0.7302    logloss : 0.604    
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 43 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.9400]
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 43 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.732000]
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mvalid result[0m: 
+auc : 0.732    logloss : 0.6027    
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 44 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.9017]
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 44 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.733700]
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mvalid result[0m: 
+auc : 0.7337    logloss : 0.6015    
+Sat 26 Aug 2023 20:04:37 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:37 INFO  [1;32mepoch 45 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.8719]
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 45 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.735400]
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mvalid result[0m: 
+auc : 0.7354    logloss : 0.6003    
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 46 training[0m [[1;34mtime[0m: 0.27s, [1;34mtrain loss[0m: 11.8487]
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 46 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.736900]
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mvalid result[0m: 
+auc : 0.7369    logloss : 0.5992    
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 47 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.8162]
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 47 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.738500]
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mvalid result[0m: 
+auc : 0.7385    logloss : 0.598    
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 48 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.7927]
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 48 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.739900]
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mvalid result[0m: 
+auc : 0.7399    logloss : 0.597    
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 49 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.7629]
+Sat 26 Aug 2023 20:04:38 INFO  [1;32mepoch 49 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.741300]
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mvalid result[0m: 
+auc : 0.7413    logloss : 0.5959    
+Sat 26 Aug 2023 20:04:38 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 50 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 11.7446]
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 50 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.742500]
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mvalid result[0m: 
+auc : 0.7425    logloss : 0.5949    
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 51 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.7218]
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 51 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.743800]
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mvalid result[0m: 
+auc : 0.7438    logloss : 0.5939    
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 52 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.7018]
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 52 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.745000]
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mvalid result[0m: 
+auc : 0.745    logloss : 0.593    
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 53 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.6728]
+Sat 26 Aug 2023 20:04:39 INFO  [1;32mepoch 53 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.746100]
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mvalid result[0m: 
+auc : 0.7461    logloss : 0.5921    
+Sat 26 Aug 2023 20:04:39 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 54 training[0m [[1;34mtime[0m: 0.25s, [1;34mtrain loss[0m: 11.6470]
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 54 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.747200]
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mvalid result[0m: 
+auc : 0.7472    logloss : 0.5912    
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 55 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.6307]
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 55 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.748200]
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mvalid result[0m: 
+auc : 0.7482    logloss : 0.5904    
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 56 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.6136]
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 56 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.749200]
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mvalid result[0m: 
+auc : 0.7492    logloss : 0.5896    
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 57 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 11.5829]
+Sat 26 Aug 2023 20:04:40 INFO  [1;32mepoch 57 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.750100]
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mvalid result[0m: 
+auc : 0.7501    logloss : 0.5888    
+Sat 26 Aug 2023 20:04:40 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 58 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.5723]
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 58 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.751000]
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mvalid result[0m: 
+auc : 0.751    logloss : 0.588    
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 59 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.5525]
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 59 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.751800]
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mvalid result[0m: 
+auc : 0.7518    logloss : 0.5873    
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 60 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.5336]
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 60 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.752600]
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mvalid result[0m: 
+auc : 0.7526    logloss : 0.5866    
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 61 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.5162]
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 61 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.753400]
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mvalid result[0m: 
+auc : 0.7534    logloss : 0.5859    
+Sat 26 Aug 2023 20:04:41 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:41 INFO  [1;32mepoch 62 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.4970]
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 62 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.754200]
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mvalid result[0m: 
+auc : 0.7542    logloss : 0.5852    
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 63 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.4853]
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 63 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.754800]
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mvalid result[0m: 
+auc : 0.7548    logloss : 0.5846    
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 64 training[0m [[1;34mtime[0m: 0.28s, [1;34mtrain loss[0m: 11.4610]
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 64 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.755600]
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mvalid result[0m: 
+auc : 0.7556    logloss : 0.5839    
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 65 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.4508]
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 65 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.756200]
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mvalid result[0m: 
+auc : 0.7562    logloss : 0.5833    
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 66 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.4375]
+Sat 26 Aug 2023 20:04:42 INFO  [1;32mepoch 66 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.756900]
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mvalid result[0m: 
+auc : 0.7569    logloss : 0.5828    
+Sat 26 Aug 2023 20:04:42 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 67 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.4157]
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 67 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.757500]
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mvalid result[0m: 
+auc : 0.7575    logloss : 0.5822    
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 68 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 11.3989]
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 68 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.758000]
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mvalid result[0m: 
+auc : 0.758    logloss : 0.5816    
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 69 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.3881]
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 69 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.758600]
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mvalid result[0m: 
+auc : 0.7586    logloss : 0.5811    
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 70 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.3827]
+Sat 26 Aug 2023 20:04:43 INFO  [1;32mepoch 70 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.759200]
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mvalid result[0m: 
+auc : 0.7592    logloss : 0.5806    
+Sat 26 Aug 2023 20:04:43 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 71 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.3693]
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 71 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.759700]
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mvalid result[0m: 
+auc : 0.7597    logloss : 0.5801    
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 72 training[0m [[1;34mtime[0m: 0.29s, [1;34mtrain loss[0m: 11.3456]
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 72 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.760200]
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mvalid result[0m: 
+auc : 0.7602    logloss : 0.5796    
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 73 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.3335]
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 73 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.760700]
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mvalid result[0m: 
+auc : 0.7607    logloss : 0.5791    
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 74 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.3247]
+Sat 26 Aug 2023 20:04:44 INFO  [1;32mepoch 74 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.761100]
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mvalid result[0m: 
+auc : 0.7611    logloss : 0.5787    
+Sat 26 Aug 2023 20:04:44 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 75 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.3080]
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 75 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.761500]
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mvalid result[0m: 
+auc : 0.7615    logloss : 0.5782    
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 76 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.3007]
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 76 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.762000]
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mvalid result[0m: 
+auc : 0.762    logloss : 0.5778    
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 77 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.2876]
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 77 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.762400]
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mvalid result[0m: 
+auc : 0.7624    logloss : 0.5774    
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 78 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.2696]
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 78 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.762700]
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mvalid result[0m: 
+auc : 0.7627    logloss : 0.577    
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 79 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.2661]
+Sat 26 Aug 2023 20:04:45 INFO  [1;32mepoch 79 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.763100]
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mvalid result[0m: 
+auc : 0.7631    logloss : 0.5766    
+Sat 26 Aug 2023 20:04:45 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 80 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.2499]
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 80 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.763400]
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mvalid result[0m: 
+auc : 0.7634    logloss : 0.5762    
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 81 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.2385]
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 81 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.763800]
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mvalid result[0m: 
+auc : 0.7638    logloss : 0.5758    
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 82 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.2351]
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 82 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.764100]
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mvalid result[0m: 
+auc : 0.7641    logloss : 0.5755    
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 83 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.2190]
+Sat 26 Aug 2023 20:04:46 INFO  [1;32mepoch 83 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.764400]
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mvalid result[0m: 
+auc : 0.7644    logloss : 0.5752    
+Sat 26 Aug 2023 20:04:46 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 84 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.2122]
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 84 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.764700]
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mvalid result[0m: 
+auc : 0.7647    logloss : 0.5748    
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 85 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1952]
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 85 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.765000]
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mvalid result[0m: 
+auc : 0.765    logloss : 0.5745    
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 86 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1965]
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 86 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.765300]
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mvalid result[0m: 
+auc : 0.7653    logloss : 0.5742    
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 87 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.1853]
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 87 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.765600]
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mvalid result[0m: 
+auc : 0.7656    logloss : 0.5739    
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 88 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.1750]
+Sat 26 Aug 2023 20:04:47 INFO  [1;32mepoch 88 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.765900]
+Sat 26 Aug 2023 20:04:47 INFO  [1;34mvalid result[0m: 
+auc : 0.7659    logloss : 0.5736    
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 89 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1675]
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 89 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.766100]
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mvalid result[0m: 
+auc : 0.7661    logloss : 0.5733    
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 90 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1569]
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 90 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.766300]
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mvalid result[0m: 
+auc : 0.7663    logloss : 0.573    
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 91 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.1554]
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 91 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.766600]
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mvalid result[0m: 
+auc : 0.7666    logloss : 0.5727    
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 92 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 11.1413]
+Sat 26 Aug 2023 20:04:48 INFO  [1;32mepoch 92 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.766800]
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mvalid result[0m: 
+auc : 0.7668    logloss : 0.5725    
+Sat 26 Aug 2023 20:04:48 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 93 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1315]
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 93 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.767000]
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mvalid result[0m: 
+auc : 0.767    logloss : 0.5722    
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 94 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1235]
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 94 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.767300]
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mvalid result[0m: 
+auc : 0.7673    logloss : 0.572    
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 95 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1142]
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 95 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.767500]
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mvalid result[0m: 
+auc : 0.7675    logloss : 0.5718    
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 96 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.1086]
+Sat 26 Aug 2023 20:04:49 INFO  [1;32mepoch 96 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.767700]
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mvalid result[0m: 
+auc : 0.7677    logloss : 0.5715    
+Sat 26 Aug 2023 20:04:49 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 97 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.1082]
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 97 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.767800]
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mvalid result[0m: 
+auc : 0.7678    logloss : 0.5713    
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 98 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.0970]
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 98 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.768100]
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mvalid result[0m: 
+auc : 0.7681    logloss : 0.5711    
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 99 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0978]
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 99 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.768200]
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mvalid result[0m: 
+auc : 0.7682    logloss : 0.5709    
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 100 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0815]
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 100 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.768400]
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mvalid result[0m: 
+auc : 0.7684    logloss : 0.5707    
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 101 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0782]
+Sat 26 Aug 2023 20:04:50 INFO  [1;32mepoch 101 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.768600]
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mvalid result[0m: 
+auc : 0.7686    logloss : 0.5705    
+Sat 26 Aug 2023 20:04:50 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 102 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0668]
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 102 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.768700]
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mvalid result[0m: 
+auc : 0.7687    logloss : 0.5703    
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 103 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0646]
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 103 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.768900]
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mvalid result[0m: 
+auc : 0.7689    logloss : 0.5701    
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 104 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0581]
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 104 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769100]
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mvalid result[0m: 
+auc : 0.7691    logloss : 0.5699    
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 105 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0535]
+Sat 26 Aug 2023 20:04:51 INFO  [1;32mepoch 105 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769200]
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mvalid result[0m: 
+auc : 0.7692    logloss : 0.5697    
+Sat 26 Aug 2023 20:04:51 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 106 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0449]
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 106 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769300]
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mvalid result[0m: 
+auc : 0.7693    logloss : 0.5695    
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 107 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0413]
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 107 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769500]
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mvalid result[0m: 
+auc : 0.7695    logloss : 0.5694    
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 108 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0373]
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 108 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769600]
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mvalid result[0m: 
+auc : 0.7696    logloss : 0.5692    
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 109 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0334]
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 109 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769700]
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mvalid result[0m: 
+auc : 0.7697    logloss : 0.5691    
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 110 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 11.0269]
+Sat 26 Aug 2023 20:04:52 INFO  [1;32mepoch 110 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.769900]
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mvalid result[0m: 
+auc : 0.7699    logloss : 0.5689    
+Sat 26 Aug 2023 20:04:52 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 111 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 11.0229]
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 111 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770000]
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mvalid result[0m: 
+auc : 0.77    logloss : 0.5688    
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 112 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0100]
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 112 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770100]
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mvalid result[0m: 
+auc : 0.7701    logloss : 0.5687    
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 113 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0078]
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 113 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770200]
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mvalid result[0m: 
+auc : 0.7702    logloss : 0.5685    
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 114 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 11.0085]
+Sat 26 Aug 2023 20:04:53 INFO  [1;32mepoch 114 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770300]
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mvalid result[0m: 
+auc : 0.7703    logloss : 0.5684    
+Sat 26 Aug 2023 20:04:53 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 115 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 10.9949]
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 115 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770400]
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mvalid result[0m: 
+auc : 0.7704    logloss : 0.5683    
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 116 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9874]
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 116 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770500]
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mvalid result[0m: 
+auc : 0.7705    logloss : 0.5681    
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 117 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 10.9877]
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 117 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770600]
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mvalid result[0m: 
+auc : 0.7706    logloss : 0.5681    
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 118 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9867]
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 118 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770700]
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mvalid result[0m: 
+auc : 0.7707    logloss : 0.5679    
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 119 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9780]
+Sat 26 Aug 2023 20:04:54 INFO  [1;32mepoch 119 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770700]
+Sat 26 Aug 2023 20:04:54 INFO  [1;34mvalid result[0m: 
+auc : 0.7707    logloss : 0.5678    
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 120 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9730]
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 120 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770800]
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mvalid result[0m: 
+auc : 0.7708    logloss : 0.5677    
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 121 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.9718]
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 121 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.770900]
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mvalid result[0m: 
+auc : 0.7709    logloss : 0.5676    
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 122 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9651]
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 122 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771000]
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mvalid result[0m: 
+auc : 0.771    logloss : 0.5675    
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 123 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 10.9625]
+Sat 26 Aug 2023 20:04:55 INFO  [1;32mepoch 123 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771100]
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mvalid result[0m: 
+auc : 0.7711    logloss : 0.5674    
+Sat 26 Aug 2023 20:04:55 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 124 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9604]
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 124 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771200]
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mvalid result[0m: 
+auc : 0.7712    logloss : 0.5673    
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 125 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.9510]
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 125 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771200]
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mvalid result[0m: 
+auc : 0.7712    logloss : 0.5672    
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 126 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9565]
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 126 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771300]
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mvalid result[0m: 
+auc : 0.7713    logloss : 0.5672    
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 127 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 10.9453]
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 127 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771400]
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mvalid result[0m: 
+auc : 0.7714    logloss : 0.5671    
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 128 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.9511]
+Sat 26 Aug 2023 20:04:56 INFO  [1;32mepoch 128 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771400]
+Sat 26 Aug 2023 20:04:56 INFO  [1;34mvalid result[0m: 
+auc : 0.7714    logloss : 0.567    
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 129 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9437]
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 129 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771500]
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mvalid result[0m: 
+auc : 0.7715    logloss : 0.5669    
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 130 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9353]
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 130 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771500]
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mvalid result[0m: 
+auc : 0.7715    logloss : 0.5669    
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 131 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9344]
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 131 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771600]
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mvalid result[0m: 
+auc : 0.7716    logloss : 0.5668    
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 132 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9318]
+Sat 26 Aug 2023 20:04:57 INFO  [1;32mepoch 132 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771700]
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mvalid result[0m: 
+auc : 0.7717    logloss : 0.5667    
+Sat 26 Aug 2023 20:04:57 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 133 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9296]
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 133 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771800]
+Sat 26 Aug 2023 20:04:58 INFO  [1;34mvalid result[0m: 
+auc : 0.7718    logloss : 0.5666    
+Sat 26 Aug 2023 20:04:58 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 134 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9222]
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 134 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771800]
+Sat 26 Aug 2023 20:04:58 INFO  [1;34mvalid result[0m: 
+auc : 0.7718    logloss : 0.5666    
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 135 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9191]
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 135 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771800]
+Sat 26 Aug 2023 20:04:58 INFO  [1;34mvalid result[0m: 
+auc : 0.7718    logloss : 0.5665    
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 136 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9166]
+Sat 26 Aug 2023 20:04:58 INFO  [1;32mepoch 136 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.771900]
+Sat 26 Aug 2023 20:04:58 INFO  [1;34mvalid result[0m: 
+auc : 0.7719    logloss : 0.5665    
+Sat 26 Aug 2023 20:04:58 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 137 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9151]
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 137 evaluating[0m [[1;34mtime[0m: 0.08s, [1;34mvalid_score[0m: 0.772000]
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mvalid result[0m: 
+auc : 0.772    logloss : 0.5664    
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 138 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 10.9019]
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 138 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772000]
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mvalid result[0m: 
+auc : 0.772    logloss : 0.5663    
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 139 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9072]
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 139 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772100]
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mvalid result[0m: 
+auc : 0.7721    logloss : 0.5663    
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 140 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.9059]
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 140 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772200]
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mvalid result[0m: 
+auc : 0.7722    logloss : 0.5662    
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 141 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8979]
+Sat 26 Aug 2023 20:04:59 INFO  [1;32mepoch 141 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772200]
+Sat 26 Aug 2023 20:04:59 INFO  [1;34mvalid result[0m: 
+auc : 0.7722    logloss : 0.5661    
+Sat 26 Aug 2023 20:05:00 INFO  [1;32mepoch 142 training[0m [[1;34mtime[0m: 0.28s, [1;34mtrain loss[0m: 10.8923]
+Sat 26 Aug 2023 20:05:00 INFO  [1;32mepoch 142 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772300]
+Sat 26 Aug 2023 20:05:00 INFO  [1;34mvalid result[0m: 
+auc : 0.7723    logloss : 0.5661    
+Sat 26 Aug 2023 20:05:00 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:00 INFO  [1;32mepoch 143 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8952]
+Sat 26 Aug 2023 20:05:00 INFO  [1;32mepoch 143 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772300]
+Sat 26 Aug 2023 20:05:00 INFO  [1;34mvalid result[0m: 
+auc : 0.7723    logloss : 0.5661    
+Sat 26 Aug 2023 20:05:00 INFO  [1;32mepoch 144 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8861]
+Sat 26 Aug 2023 20:05:00 INFO  [1;32mepoch 144 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772300]
+Sat 26 Aug 2023 20:05:00 INFO  [1;34mvalid result[0m: 
+auc : 0.7723    logloss : 0.566    
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 145 training[0m [[1;34mtime[0m: 0.27s, [1;34mtrain loss[0m: 10.8950]
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 145 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772400]
+Sat 26 Aug 2023 20:05:01 INFO  [1;34mvalid result[0m: 
+auc : 0.7724    logloss : 0.566    
+Sat 26 Aug 2023 20:05:01 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 146 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 10.8910]
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 146 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772400]
+Sat 26 Aug 2023 20:05:01 INFO  [1;34mvalid result[0m: 
+auc : 0.7724    logloss : 0.5659    
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 147 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8928]
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 147 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772400]
+Sat 26 Aug 2023 20:05:01 INFO  [1;34mvalid result[0m: 
+auc : 0.7724    logloss : 0.5659    
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 148 training[0m [[1;34mtime[0m: 0.28s, [1;34mtrain loss[0m: 10.8738]
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 148 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772500]
+Sat 26 Aug 2023 20:05:01 INFO  [1;34mvalid result[0m: 
+auc : 0.7725    logloss : 0.5659    
+Sat 26 Aug 2023 20:05:01 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:01 INFO  [1;32mepoch 149 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8834]
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 149 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772600]
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mvalid result[0m: 
+auc : 0.7726    logloss : 0.5658    
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 150 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8784]
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 150 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772600]
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mvalid result[0m: 
+auc : 0.7726    logloss : 0.5658    
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 151 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8786]
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 151 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772600]
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mvalid result[0m: 
+auc : 0.7726    logloss : 0.5657    
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 152 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8702]
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 152 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772700]
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mvalid result[0m: 
+auc : 0.7727    logloss : 0.5657    
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 153 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8687]
+Sat 26 Aug 2023 20:05:02 INFO  [1;32mepoch 153 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772700]
+Sat 26 Aug 2023 20:05:02 INFO  [1;34mvalid result[0m: 
+auc : 0.7727    logloss : 0.5657    
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 154 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 10.8609]
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 154 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772700]
+Sat 26 Aug 2023 20:05:03 INFO  [1;34mvalid result[0m: 
+auc : 0.7727    logloss : 0.5656    
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 155 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 10.8657]
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 155 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772700]
+Sat 26 Aug 2023 20:05:03 INFO  [1;34mvalid result[0m: 
+auc : 0.7727    logloss : 0.5656    
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 156 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 10.8630]
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 156 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772800]
+Sat 26 Aug 2023 20:05:03 INFO  [1;34mvalid result[0m: 
+auc : 0.7728    logloss : 0.5656    
+Sat 26 Aug 2023 20:05:03 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 157 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 10.8594]
+Sat 26 Aug 2023 20:05:03 INFO  [1;32mepoch 157 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772800]
+Sat 26 Aug 2023 20:05:03 INFO  [1;34mvalid result[0m: 
+auc : 0.7728    logloss : 0.5656    
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 158 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 10.8601]
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 158 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772900]
+Sat 26 Aug 2023 20:05:04 INFO  [1;34mvalid result[0m: 
+auc : 0.7729    logloss : 0.5655    
+Sat 26 Aug 2023 20:05:04 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 159 training[0m [[1;34mtime[0m: 0.24s, [1;34mtrain loss[0m: 10.8550]
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 159 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772900]
+Sat 26 Aug 2023 20:05:04 INFO  [1;34mvalid result[0m: 
+auc : 0.7729    logloss : 0.5655    
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 160 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 10.8512]
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 160 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772900]
+Sat 26 Aug 2023 20:05:04 INFO  [1;34mvalid result[0m: 
+auc : 0.7729    logloss : 0.5655    
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 161 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8545]
+Sat 26 Aug 2023 20:05:04 INFO  [1;32mepoch 161 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772900]
+Sat 26 Aug 2023 20:05:04 INFO  [1;34mvalid result[0m: 
+auc : 0.7729    logloss : 0.5655    
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 162 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8524]
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 162 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.772900]
+Sat 26 Aug 2023 20:05:05 INFO  [1;34mvalid result[0m: 
+auc : 0.7729    logloss : 0.5655    
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 163 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8516]
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 163 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773000]
+Sat 26 Aug 2023 20:05:05 INFO  [1;34mvalid result[0m: 
+auc : 0.773    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:05 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 164 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8465]
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 164 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773000]
+Sat 26 Aug 2023 20:05:05 INFO  [1;34mvalid result[0m: 
+auc : 0.773    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 165 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8401]
+Sat 26 Aug 2023 20:05:05 INFO  [1;32mepoch 165 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773000]
+Sat 26 Aug 2023 20:05:05 INFO  [1;34mvalid result[0m: 
+auc : 0.773    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 166 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8453]
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 166 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773000]
+Sat 26 Aug 2023 20:05:06 INFO  [1;34mvalid result[0m: 
+auc : 0.773    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 167 training[0m [[1;34mtime[0m: 0.25s, [1;34mtrain loss[0m: 10.8438]
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 167 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773100]
+Sat 26 Aug 2023 20:05:06 INFO  [1;34mvalid result[0m: 
+auc : 0.7731    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:06 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 168 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8357]
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 168 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773100]
+Sat 26 Aug 2023 20:05:06 INFO  [1;34mvalid result[0m: 
+auc : 0.7731    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 169 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8343]
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 169 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773100]
+Sat 26 Aug 2023 20:05:06 INFO  [1;34mvalid result[0m: 
+auc : 0.7731    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:06 INFO  [1;32mepoch 170 training[0m [[1;34mtime[0m: 0.20s, [1;34mtrain loss[0m: 10.8324]
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 170 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773100]
+Sat 26 Aug 2023 20:05:07 INFO  [1;34mvalid result[0m: 
+auc : 0.7731    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 171 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8287]
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 171 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773100]
+Sat 26 Aug 2023 20:05:07 INFO  [1;34mvalid result[0m: 
+auc : 0.7731    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 172 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8369]
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 172 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773200]
+Sat 26 Aug 2023 20:05:07 INFO  [1;34mvalid result[0m: 
+auc : 0.7732    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:07 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 173 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8275]
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 173 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773200]
+Sat 26 Aug 2023 20:05:07 INFO  [1;34mvalid result[0m: 
+auc : 0.7732    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 174 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8289]
+Sat 26 Aug 2023 20:05:07 INFO  [1;32mepoch 174 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773200]
+Sat 26 Aug 2023 20:05:07 INFO  [1;34mvalid result[0m: 
+auc : 0.7732    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 175 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8265]
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 175 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773200]
+Sat 26 Aug 2023 20:05:08 INFO  [1;34mvalid result[0m: 
+auc : 0.7732    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 176 training[0m [[1;34mtime[0m: 0.26s, [1;34mtrain loss[0m: 10.8173]
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 176 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773200]
+Sat 26 Aug 2023 20:05:08 INFO  [1;34mvalid result[0m: 
+auc : 0.7732    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 177 training[0m [[1;34mtime[0m: 0.26s, [1;34mtrain loss[0m: 10.8183]
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 177 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773300]
+Sat 26 Aug 2023 20:05:08 INFO  [1;34mvalid result[0m: 
+auc : 0.7733    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:08 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 178 training[0m [[1;34mtime[0m: 0.23s, [1;34mtrain loss[0m: 10.8283]
+Sat 26 Aug 2023 20:05:08 INFO  [1;32mepoch 178 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773300]
+Sat 26 Aug 2023 20:05:08 INFO  [1;34mvalid result[0m: 
+auc : 0.7733    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 179 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.8181]
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 179 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773300]
+Sat 26 Aug 2023 20:05:09 INFO  [1;34mvalid result[0m: 
+auc : 0.7733    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 180 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8196]
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 180 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773300]
+Sat 26 Aug 2023 20:05:09 INFO  [1;34mvalid result[0m: 
+auc : 0.7733    logloss : 0.5652    
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 181 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8149]
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 181 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773300]
+Sat 26 Aug 2023 20:05:09 INFO  [1;34mvalid result[0m: 
+auc : 0.7733    logloss : 0.5652    
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 182 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8060]
+Sat 26 Aug 2023 20:05:09 INFO  [1;32mepoch 182 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773300]
+Sat 26 Aug 2023 20:05:09 INFO  [1;34mvalid result[0m: 
+auc : 0.7733    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 183 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8100]
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 183 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:10 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5652    
+Sat 26 Aug 2023 20:05:10 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 184 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8121]
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 184 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:10 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 185 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8023]
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 185 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:10 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5652    
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 186 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8052]
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 186 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:10 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 187 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.7999]
+Sat 26 Aug 2023 20:05:10 INFO  [1;32mepoch 187 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:10 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 188 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8019]
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 188 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:11 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 189 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8058]
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 189 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773400]
+Sat 26 Aug 2023 20:05:11 INFO  [1;34mvalid result[0m: 
+auc : 0.7734    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 190 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8042]
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 190 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:11 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:11 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 191 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8074]
+Sat 26 Aug 2023 20:05:11 INFO  [1;32mepoch 191 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:11 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 192 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8036]
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 192 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:12 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5652    
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 193 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.8014]
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 193 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:12 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 194 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.7950]
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 194 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:12 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 195 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7896]
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 195 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:12 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 196 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7967]
+Sat 26 Aug 2023 20:05:12 INFO  [1;32mepoch 196 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:12 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 197 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7933]
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 197 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773500]
+Sat 26 Aug 2023 20:05:13 INFO  [1;34mvalid result[0m: 
+auc : 0.7735    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 198 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.7938]
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 198 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:13 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:13 INFO  [1;34mSaving current best[0m: saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 199 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7922]
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 199 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:13 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 200 training[0m [[1;34mtime[0m: 0.31s, [1;34mtrain loss[0m: 10.7908]
+Sat 26 Aug 2023 20:05:13 INFO  [1;32mepoch 200 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:13 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 201 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7928]
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 201 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:14 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 202 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7774]
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 202 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:14 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 203 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7969]
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 203 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:14 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 204 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7919]
+Sat 26 Aug 2023 20:05:14 INFO  [1;32mepoch 204 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:14 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 205 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7819]
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 205 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:15 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 206 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7786]
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 206 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:15 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5653    
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 207 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7833]
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 207 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:15 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 208 training[0m [[1;34mtime[0m: 0.21s, [1;34mtrain loss[0m: 10.7830]
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 208 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:15 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 209 training[0m [[1;34mtime[0m: 0.22s, [1;34mtrain loss[0m: 10.7781]
+Sat 26 Aug 2023 20:05:15 INFO  [1;32mepoch 209 evaluating[0m [[1;34mtime[0m: 0.01s, [1;34mvalid_score[0m: 0.773600]
+Sat 26 Aug 2023 20:05:15 INFO  [1;34mvalid result[0m: 
+auc : 0.7736    logloss : 0.5654    
+Sat 26 Aug 2023 20:05:15 INFO  Finished training, best eval result in epoch 198
+Sat 26 Aug 2023 20:05:15 INFO  Loading model structure and parameters from saved\LR-Aug-26-2023_20-04-26.pth
+Sat 26 Aug 2023 20:05:15 INFO  [1;33mbest valid [0m: {'auc': 0.7736, 'logloss': 0.5653}
+Sat 26 Aug 2023 20:05:15 INFO  [1;33mtest result[0m: {'auc': 0.7748, 'logloss': 0.5636}

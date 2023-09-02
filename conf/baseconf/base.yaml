@@ -1,0 +1,36 @@
+# General Params
+general_params:
+  seed: 10086
+  use_gpu: False
+  gpu_id: 0, 1
+
+# Dataset Params
+dataset_param:
+  dataset_name: ml-100k
+
+# Training Params
+training_params:
+  epochs: 500
+  train_batch_size: 512
+  optimizer: Adam
+  lr: 0.001
+  checkpoint_dir: ./checkpoint
+  checkpoint_save_freq: 1
+  eval_freq: 1
+  stopping_steps: 10
+
+# Evaluation Params
+eval_params:
+  eval_batch_size: 512
+  metrics: ['AUC', 'LogLoss']
+  metric_decide_bit: 5
+
+# Model Params
+model_params:
+  embedding_size: 10
+
+# Experiment Params
+
+# Logging Params
+logging_params:
+  log_level: INFO

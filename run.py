@@ -1,41 +1,60 @@
-# import argparse
-#
-# parser = argparse.ArgumentParser()
-# parser.add_argument("--model", "-m", type=str, default="BPR", help="name of models")
-# parser.add_argument(
-#     "--dataset", "-d", type=str, default="ml-100k", help="name of datasets"
-# )
-# parser.add_argument("--config_files", type=str, default=None, help="config files")
-# parser.add_argument(
-#     "--nproc", type=int, default=1, help="the number of process in this group"
-# )
-#
-# args, _ = parser.parse_known_args()
-# print(args)
-#
+import argparse
+from ast import arg
+from recbole.quick_start import run_recbole#, run_recboles
+from pyspark.ml.feature import MinMaxScaler
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", "-m", type=str, default="BPR", help="name of models")
+    parser.add_argument(
+        "--dataset", "-d", type=str, default="ml-100k", help="name of datasets"
+    )
+    parser.add_argument("--config_files", type=str, default=None, help="config files")
+    parser.add_argument(
+        "--nproc", type=int, default=1, help="the number of process in this group"
+    )
+    parser.add_argument(
+        "--ip", type=str, default="localhost", help="the ip of master node"
+    )
+    parser.add_argument(
+        "--port", type=str, default="5678", help="the port of master node"
+    )
+    parser.add_argument(
+        "--world_size", type=int, default=-1, help="total number of jobs"
+    )
+    parser.add_argument(
+        "--group_offset",
+        type=int,
+        default=0,
+        help="the global rank offset of this group",
+    )
 
-# See official docs at https://dash.plotly.com
-# pip install dash pandas
-from dash import Dash, html, dcc, callback, Output, Input
-import plotly.express as px
-import pandas as pd
+    args, _ = parser.parse_known_args()
 
-df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder_unfiltered.csv')
-app = Dash(__name__, external_stylesheets=[r"./assets/style.css"])
-app.layout = html.Div([
-    html.H1(children='Title of Dash App', style={'textAlign': 'center'}),
-    dcc.Dropdown(df.country.unique(), 'Canada', id='dropdown-selection'),
-    dcc.Graph(id='graph-content')
-])
-@callback(
-    Output('graph-content', 'figure'),
-    Input('dropdown-selection', 'value')
-)
-def update_graph(value):
-    dff = df[df.country == value]
-    return px.line(dff, x='year', y='pop')
+    config_file_list = (
+        args.config_files.strip().split(" ") if args.config_files else None
+    )
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+    if args.nproc == 1 and args.world_size <= 0:
+        run_recbole(
+            model=args.model, dataset=args.dataset, config_file_list=config_file_list
+        )
+    # else:
+    #     if args.world_size == -1:
+    #         args.world_size = args.nproc
+    #     import torch.multiprocessing as mp
+    #
+    #     mp.spawn(
+    #         run_recboles,
+    #         args=(
+    #             args.model,
+    #             args.dataset,
+    #             config_file_list,
+    #             args.ip,
+    #             args.port,
+    #             args.world_size,
+    #             args.nproc,
+    #             args.group_offset,
+    #         ),
+    #         nprocs=args.nproc,
+    #     )

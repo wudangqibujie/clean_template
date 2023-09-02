@@ -1,0 +1,170 @@
+dense_feats:
+  age:
+    dimension: 1
+    dtype: float32
+    name: age
+  capital_gains:
+    dimension: 1
+    dtype: float32
+    name: capital_gains
+  capital_losses:
+    dimension: 1
+    dtype: float32
+    name: capital_losses
+  instance_weight:
+    dimension: 1
+    dtype: float32
+    name: instance_weight
+  num_emp:
+    dimension: 1
+    dtype: float32
+    name: num_emp
+  own_or_self:
+    dimension: 1
+    dtype: float32
+    name: own_or_self
+  stock_dividends:
+    dimension: 1
+    dtype: float32
+    name: stock_dividends
+  vet_benefits:
+    dimension: 1
+    dtype: float32
+    name: vet_benefits
+  wage_per_hour:
+    dimension: 1
+    dtype: float32
+    name: wage_per_hour
+  weeks_worked:
+    dimension: 1
+    dtype: float32
+    name: weeks_worked
+  year:
+    dimension: 1
+    dtype: float32
+    name: year
+label_info:
+  income_50k:
+    name: income_50k
+    task_type: regression
+  marital_stat:
+    name: marital_stat
+    task_type: binary-classification
+sparse_feats:
+  citizenship:
+    embedding_dim: 4
+    name: citizenship
+    vocabulary_size: 5
+  class_worker:
+    embedding_dim: 4
+    name: class_worker
+    vocabulary_size: 9
+  country_father:
+    embedding_dim: 4
+    name: country_father
+    vocabulary_size: 43
+  country_mother:
+    embedding_dim: 4
+    name: country_mother
+    vocabulary_size: 43
+  country_self:
+    embedding_dim: 4
+    name: country_self
+    vocabulary_size: 43
+  det_hh_fam_stat:
+    embedding_dim: 4
+    name: det_hh_fam_stat
+    vocabulary_size: 38
+  det_hh_summ:
+    embedding_dim: 4
+    name: det_hh_summ
+    vocabulary_size: 8
+  det_ind_code:
+    embedding_dim: 4
+    name: det_ind_code
+    vocabulary_size: 52
+  det_occ_code:
+    embedding_dim: 4
+    name: det_occ_code
+    vocabulary_size: 47
+  education:
+    embedding_dim: 4
+    name: education
+    vocabulary_size: 17
+  fam_under_18:
+    embedding_dim: 4
+    name: fam_under_18
+    vocabulary_size: 5
+  full_or_part_emp:
+    embedding_dim: 4
+    name: full_or_part_emp
+    vocabulary_size: 8
+  hisp_origin:
+    embedding_dim: 4
+    name: hisp_origin
+    vocabulary_size: 10
+  hs_college:
+    embedding_dim: 4
+    name: hs_college
+    vocabulary_size: 3
+  major_ind_code:
+    embedding_dim: 4
+    name: major_ind_code
+    vocabulary_size: 24
+  major_occ_code:
+    embedding_dim: 4
+    name: major_occ_code
+    vocabulary_size: 15
+  mig_chg_msa:
+    embedding_dim: 4
+    name: mig_chg_msa
+    vocabulary_size: 10
+  mig_chg_reg:
+    embedding_dim: 4
+    name: mig_chg_reg
+    vocabulary_size: 9
+  mig_move_reg:
+    embedding_dim: 4
+    name: mig_move_reg
+    vocabulary_size: 10
+  mig_prev_sunbelt:
+    embedding_dim: 4
+    name: mig_prev_sunbelt
+    vocabulary_size: 4
+  mig_same:
+    embedding_dim: 4
+    name: mig_same
+    vocabulary_size: 3
+  race:
+    embedding_dim: 4
+    name: race
+    vocabulary_size: 5
+  region_prev_res:
+    embedding_dim: 4
+    name: region_prev_res
+    vocabulary_size: 6
+  sex:
+    embedding_dim: 4
+    name: sex
+    vocabulary_size: 2
+  state_prev_res:
+    embedding_dim: 4
+    name: state_prev_res
+    vocabulary_size: 51
+  tax_filer_stat:
+    embedding_dim: 4
+    name: tax_filer_stat
+    vocabulary_size: 6
+  unemp_reason:
+    embedding_dim: 4
+    name: unemp_reason
+    vocabulary_size: 6
+  union_member:
+    embedding_dim: 4
+    name: union_member
+    vocabulary_size: 3
+  vet_question:
+    embedding_dim: 4
+    name: vet_question
+    vocabulary_size: 3
+varlen_sparse_feats: null
